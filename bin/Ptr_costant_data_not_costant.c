@@ -16,7 +16,13 @@
 #include <stdio.h>
 
 int main() {
-	// printf() displays the string inside quotation
-	printf("Ptr_costant_data_not_costant");
+	int x;
+	int y;
+
+	int * const ptr = &x;
+
+	*ptr = 7;
+	ptr = &y;
+
 	return 0;
 }
